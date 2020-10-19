@@ -1,0 +1,119 @@
+/* Extra small devices (portrait phones, less than 576px) */
+
+@media only screen and (max-width: 575px) {
+    
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .welcome-text h1 {
+        font-size: 40px;
+    }
+    .welcome-text h6 {
+        font-size: 25px;
+    }
+    .welcome-text a.hire-me {
+        padding: 6px 47px;
+    }
+    .about-img {
+        margin-bottom: 60px;
+    }
+    .about-me a.cv {
+        padding: 7px 35px;
+    }
+    .about-me a.hire-me{
+        padding: 7px 35px;
+        margin-bottom: 15px;
+    }
+    .about-img:after {
+/*
+    position: absolute;
+    content: "";
+    left: -31px;
+    bottom: -28px;
+    border: 8px solid #fdb733;
+*/
+    width: 250px;
+/*
+    height: 100%;
+    z-index: -1;
+*/
+    }
+     .single-service h4 {
+        font-size: 22px;
+    }
+    .single-service p {
+        font-size: 12px;
+    }
+    .isotope-menu ul li {
+        font-size: 18px;
+        padding: 8px 12px;
+        margin-right: 5px;
+    }
+    .skill-bg {
+        display: none;
+    }
+    .provide {
+        margin-bottom: 30px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .about-img {
+        margin-bottom: 60px;
+    }
+    .about-img:after {
+    position: absolute;
+    content: "";
+    left: -31px;
+    bottom: -28px;
+    border: 8px solid #fdb733;
+    width: 52%;
+    height: 100%;
+    z-index: -1;
+    }
+    .project-area h4 {
+        font-size: 29px;
+    }
+     .single-service h4 {
+        font-size: 22px;
+    }
+    .single-service p {
+        font-size: 12px;
+    }
+    .skill-bg {
+        display: none;
+    }
+    .provide {
+        margin-bottom: 30px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .about-img {
+        margin-left: 0;
+    }
+    .about-content {
+        margin-left: 50px;
+    } 
+    .single-service h4 {
+        font-size: 26px;
+    }
+    .single-service p {
+        font-size: 12px;
+    }
+
+}
+
+/* Large devices (desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {}
+
+/* Extra large devices (large desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {}

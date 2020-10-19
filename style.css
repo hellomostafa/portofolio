@@ -1,0 +1,607 @@
+/*-----------------------------------------------------------------------------------
+
+    Template Name:
+    Template URI:
+    Description: T
+    Author:
+    Author URL:
+    Version: 1.0
+
+-----------------------------------------------------------------------------------
+
+    CSS INDEX
+    ==============================
+    #  Base CSS
+    1. Menu Area
+    2. Hero Area
+    3. About area
+    4. Service area
+    5. Work area
+    6. Skill area
+    7. Hire me area
+    8. Footer area 
+
+
+=======================================================================
+*/
+
+/*  ================================================
+        #. Base CSS
+    ================================================ */
+
+html,
+body {
+    height: 100%;
+    font-family: 'Roboto Slab', serif;
+}
+
+body {}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h5 {
+/*    margin: 0 0 15px;*/
+}
+
+.container {
+    width: 970px;
+    margin: 0 auto;
+}
+
+a,
+a:hover,
+a:focus,
+a:visited {
+    text-decoration: none;
+}
+p {
+   
+}
+
+ul,
+ol {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.logo {
+    margin-top: -10%;
+}
+
+
+
+.menu ul li {
+    color: #fff;
+}
+
+.header-area {
+    padding: 15px 0px;
+}
+.section-padding {
+    padding: 100px 0px;    
+}
+.section-title h3 {
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 44px;
+}
+.section-title h3:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: -10px;
+    width: 17%;
+    height: 3px;
+    background-color: #feb532;
+    border-radius: 10px;
+}
+.section-title p {
+    color: #616970;
+}
+.img1 { background-image: url(img/img1.jpg);}
+.img2 { background-image: url(img/img2.jpg);}
+.img3 { background-image: url(img/img3.jpg);}
+.img4 { background-image: url(img/img4.jpg);}
+
+
+
+
+
+
+
+
+
+
+
+
+/*  ================================================
+        1. Menu Area
+    ================================================ */
+
+.menu-area {
+    position: absolute;
+    right: 40px;
+    top: 40px;
+    z-index: 99;
+}
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+/*    background-color: #2B050D #111;*/
+    background-color: #2B050D;
+    overflow-x: hidden;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.openbtn {
+    float: right;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: greenyellow;
+    padding: 10px 15px;
+    border: none;
+}
+
+.openbtn:hover {
+    background-color: #000;
+    -webkit-transition: all .6s;
+    -o-transition: all .6s;
+    transition: all .6s;
+}
+
+#main {
+    -webkit-transition: margin-left .5s;
+    -o-transition: margin-left .5s;
+    transition: margin-left .5s;
+    margin: 0px 20px 0px 0px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  ================================================
+        2. Hero Area
+    ================================================ */
+.welcome-area {
+    padding: 180px 0px;
+    background-color: #000000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23220000' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23440000' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23660000' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23880000' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23A00' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+.welcome-text p {
+    color: #eeeeee;
+    margin-bottom: 0px;
+    font-weight: 600
+}
+
+h1 {
+    color: #fdb733;
+    font-size: 56px;
+    font-weight: 600;
+}
+.welcome-text h6 {
+    color: #b6b6b6;
+    font-size: 30px;
+    padding-bottom: 45px;
+}
+.welcome-text a.hire-me {
+    display: inline-block;
+    border: 1px solid #fdb733;
+    padding: 8px 48px;
+}
+a.hire-me {
+    color: #bf8b30;
+    font-weight: 800;
+    border-radius: 4px;
+}
+a.hire-me:hover {
+    background-color: #ffb633;
+    color: white;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+}
+
+/*  ================================================
+        3. About Area
+    ================================================ */
+
+.about-me {
+    background-color: #2B050D;
+}
+.about-img img{
+    border: 12px solid;
+}
+.about-img {
+    margin-left: 30px;
+    position: relative;
+    z-index: 99;
+}
+
+.about-img:after {
+    position: absolute;
+    content: "";
+    left: -31px;
+    bottom: -28px;
+    border: 8px solid #fdb733;
+    width: 96%;
+    height: 100%;
+    z-index: -1;
+}
+
+
+.about-content p {
+    color: #616970;
+    margin-bottom: 0px;
+    padding-bottom: 30px;
+    
+}
+.about-content p:nth-child(odd){
+/*    padding-top: -20px;*/
+}
+.about-me a.hire-me {
+    display: inline-block;
+    border: 1px solid #fdb733;
+    padding: 10px 38px;
+    background-color: #ffb633;
+    color: white;
+    margin-right: 10px;
+}
+.about-me a.hire-me:hover {
+    background-color: #2B050D;
+    color:#bf8b30;
+}
+.about-me a.cv {
+    display: inline-block;
+    border: 1px solid #fdb733;
+    padding: 10px 38px;
+}
+a.cv{
+    color: #bf8b30;
+    font-weight: 800;
+    border-radius: 4px;
+}
+a.cv:hover {
+    background-color: #ffb633;
+    color: white;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+}
+
+
+/*  ================================================
+        4. Service area
+    ================================================ */
+
+
+.service-area {
+    background-color: #000000;
+}
+.service-area .section-title {
+    margin-bottom: 40px;
+}
+.single-service {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 30px;
+    padding: 30px 20px;
+    border-radius: 2%;
+}
+.single-service i {
+    font-size: 100px;
+    
+}
+
+.img1:after  {
+    position: absolute;
+    content: "";
+    left:0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #38b4fe;
+    opacity: .7;
+    border-radius: 2%;
+    z-index: -1;
+}
+.img2:after  {
+    position: absolute;
+    content: "";
+    left:0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fcc84e;
+    opacity: .7;
+    border-radius: 2%;
+    z-index: -1;
+}
+.img3:after  {
+    position: absolute;
+    content: "";
+    left:0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #33d669;
+    opacity: .7;
+    border-radius: 2%;
+    z-index: -1;
+}
+.img4:after  {
+    position: absolute;
+    content: "";
+    left:0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #d45fe4  ;
+    opacity: .7;
+    border-radius: 2%;
+    z-index: -1;
+}
+.single-service {
+    color: #f3fbfe;
+    
+    z-index: 1;
+}
+.single-service h4 {
+    font-weight: 700;
+    font-size: 35px;
+
+}
+
+
+
+/*  ================================================
+        5. Work area
+    ================================================ */
+
+.work-area {
+     background-color: #2B050D;
+}
+.isotope-menu ul li {
+    color: white;
+}
+.isotope-menu ul li:hover {
+    color: yellow;
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s;
+}
+.isotope-menu ul li:visited {
+    color: yellow;
+}
+.btn.iso {
+    color: yellow;
+}
+.isotope-wrap {
+    margin-top: 40px;
+}
+
+.isotope-item {
+    margin: 5px;
+}
+.isotope-item:hover {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition: all .6s;
+    -o-transition: all .6s;
+    transition: all .6s;
+    z-index: 99;
+    -webkit-box-shadow: -1px 0px 18px 2px rgba(173,152,173,1);
+    box-shadow: -1px 0px 18px 2px rgba(173,152,173,1);
+}
+
+
+
+
+
+/*  ================================================
+        6. Skill area
+    ================================================ */
+
+.skill-area {
+     background-color: #000000;
+    position: relative;
+
+}
+div#skills {
+    padding: 70px 0px;
+}
+.provide h3 {
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+}
+.provide h4 {
+    margin: 30px 0px 45px 0px;
+    color: #b6b6b6;
+    font-weight: 600
+}
+.provide a {
+    background-color: #ffb633;
+    color: white;
+    display: inline-block;
+    border: 1px solid #fdb733;
+    padding: 8px 48px;
+    font-weight: 800;
+    border-radius: 4px;
+}
+.single-bar-item h5 {
+    font-size: 15px;
+    color: white;
+}
+.skill-bg {
+    background-image: url(img/skill-bg.jpg);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width:44%;
+}
+
+
+
+
+/*  ================================================
+        7. Hire Me area Start
+    ================================================ */
+
+.project-area {
+    background-color: #f3ff0d;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1000 1000'%3E%3Cdefs%3E%3CradialGradient id='a' cx='500' cy='500' r='975' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23f3ff0d'/%3E%3Cstop offset='1' stop-color='%23240'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='500' cy='500' r='975' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23ddff19' stop-opacity='1'/%3E%3Cstop offset='1' stop-color='%23ddff19' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1000' height='1000'/%3E%3Cg fill='none' stroke='%23081' stroke-width='10' stroke-miterlimit='10' stroke-opacity='.2'%3E%3Cpolygon points='-500%2C500 500%2C-500 1500%2C500 500%2C1500'/%3E%3Cpolygon points='-475%2C500 500%2C-475 1475%2C500 500%2C1475'/%3E%3Cpolygon points='-450%2C500 500%2C-450 1450%2C500 500%2C1450'/%3E%3Cpolygon points='-425%2C500 500%2C-425 1425%2C500 500%2C1425'/%3E%3Cpolygon points='-400%2C500 500%2C-400 1400%2C500 500%2C1400'/%3E%3Cpolygon points='-375%2C500 500%2C-375 1375%2C500 500%2C1375'/%3E%3Cpolygon points='-350%2C500 500%2C-350 1350%2C500 500%2C1350'/%3E%3Cpolygon points='-325%2C500 500%2C-325 1325%2C500 500%2C1325'/%3E%3Cpolygon points='-300%2C500 500%2C-300 1300%2C500 500%2C1300'/%3E%3Cpolygon points='-275%2C500 500%2C-275 1275%2C500 500%2C1275'/%3E%3Cpolygon points='-250%2C500 500%2C-250 1250%2C500 500%2C1250'/%3E%3Cpolygon points='-225%2C500 500%2C-225 1225%2C500 500%2C1225'/%3E%3Cpolygon points='-200%2C500 500%2C-200 1200%2C500 500%2C1200'/%3E%3Cpolygon points='-175%2C500 500%2C-175 1175%2C500 500%2C1175'/%3E%3Cpolygon points='-150%2C500 500%2C-150 1150%2C500 500%2C1150'/%3E%3Cpolygon points='-125%2C500 500%2C-125 1125%2C500 500%2C1125'/%3E%3Cpolygon points='-100%2C500 500%2C-100 1100%2C500 500%2C1100'/%3E%3Cpolygon points='-75%2C500 500%2C-75 1075%2C500 500%2C1075'/%3E%3Cpolygon points='-50%2C500 500%2C-50 1050%2C500 500%2C1050'/%3E%3Cpolygon points='-25%2C500 500%2C-25 1025%2C500 500%2C1025'/%3E%3Cpolygon points='0%2C500 500%2C0 1000%2C500 500%2C1000'/%3E%3Cpolygon points='25%2C500 500%2C25 975%2C500 500%2C975'/%3E%3Cpolygon points='50%2C500 500%2C50 950%2C500 500%2C950'/%3E%3Cpolygon points='75%2C500 500%2C75 925%2C500 500%2C925'/%3E%3Cpolygon points='100%2C500 500%2C100 900%2C500 500%2C900'/%3E%3Cpolygon points='125%2C500 500%2C125 875%2C500 500%2C875'/%3E%3Cpolygon points='150%2C500 500%2C150 850%2C500 500%2C850'/%3E%3Cpolygon points='175%2C500 500%2C175 825%2C500 500%2C825'/%3E%3Cpolygon points='200%2C500 500%2C200 800%2C500 500%2C800'/%3E%3Cpolygon points='225%2C500 500%2C225 775%2C500 500%2C775'/%3E%3Cpolygon points='250%2C500 500%2C250 750%2C500 500%2C750'/%3E%3Cpolygon points='275%2C500 500%2C275 725%2C500 500%2C725'/%3E%3Cpolygon points='300%2C500 500%2C300 700%2C500 500%2C700'/%3E%3Cpolygon points='325%2C500 500%2C325 675%2C500 500%2C675'/%3E%3Cpolygon points='350%2C500 500%2C350 650%2C500 500%2C650'/%3E%3Cpolygon points='375%2C500 500%2C375 625%2C500 500%2C625'/%3E%3Cpolygon points='400%2C500 500%2C400 600%2C500 500%2C600'/%3E%3Cpolygon points='425%2C500 500%2C425 575%2C500 500%2C575'/%3E%3Cpolygon points='450%2C500 500%2C450 550%2C500 500%2C550'/%3E%3Cpolygon points='475%2C500 500%2C475 525%2C500 500%2C525'/%3E%3C/g%3E%3Crect fill-opacity='.2' fill='url(%23b)' width='1000' height='1000'/%3E %3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+}
+.project-area h4 {
+    color: white;
+    font-size: 35px;
+    font-weight: 800;
+    padding-bottom: 40px;
+    position: relative;
+}
+.project-area h4:after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 10%;
+    left: 45%;
+    bottom: 20px;
+    background-color: white;
+    border-radius: 12px;
+}
+.project-area a {
+    color: black;
+    font-weight: 600;
+    background-color: white;
+    padding: 10px 30px;
+    border-radius: 6px;
+}
+
+
+
+/*  ================================================
+        8. Footer Area Start 
+    ================================================ */
+
+.footer-area {
+    background-color: #000000;
+}
+.footer-w {
+
+}
+.footer-text h3 {
+    color: #ffb633;
+    font-family: 'Akronim', cursive;
+    font-size: 48px;
+}
+.footer-text p {
+    color: #616970;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#fb {
+    padding: 8px 14px;
+}
+#fb:hover {
+    background-color: #3b5998;
+}
+#tw:hover {
+    background-color: #1da1f2;
+}
+#lin:hover {
+    background-color: #0077b5;
+}
+#git {
+    padding: 9px 11px;
+}
+#git:hover {
+    background-color: #c9510c;
+}
+.social a {
+    color: white;
+    margin-right: 10px;
+    padding: 8px 10px;
+    background-color:#2f2626;  
+    border-radius: 40px;
+     -webkit-transition: all .6s;
+     -o-transition: all .6s;
+     transition: all .6s;
+}
+.social a:hover {
+   background-color: #ffb633;
+}
+.footer-copyright {
+    color: #616970;
+    border-top: 1px solid #2f2626;
+    padding-top: 30px;
+    margin-top: 80px;
+    margin-bottom: -80px;
+}
+.footer-copyright a {
+    color: #616970;
+    font-weight: 700;
+}
